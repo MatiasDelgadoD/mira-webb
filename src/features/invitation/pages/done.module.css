@@ -1,0 +1,29 @@
+/* El tilde dorado con halo de "¡Felicitaciones!". */
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 220px;
+  margin-top: 36px;
+  border: 3px solid #ffb547;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 170, 60, 0.18) 0%, rgba(0, 0, 0, 0) 70%);
+  box-shadow:
+    0 0 24px rgba(255, 170, 60, 0.65),
+    inset 0 0 24px rgba(255, 170, 60, 0.35);
+  color: #ffbf55;
+  filter: drop-shadow(0 0 10px rgba(255, 170, 60, 0.6));
+}
+
+.smallCheck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #ffb547;
+  border-radius: 50%;
+  box-shadow: 0 0 16px rgba(255, 170, 60, 0.5);
+  color: #ffbf55;
+}

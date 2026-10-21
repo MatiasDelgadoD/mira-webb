@@ -16,6 +16,8 @@
   --color-card-alt: #151515;
   --color-success: #4caf82;
   --color-danger: #e05252;
+  /* El azul de Comfamiliar, en las páginas del proveedor. */
+  --color-brand: #2b4c9b;
 
   /* Todo lo dorado va con este degradado, nunca plano. */
   --gradient-cta: linear-gradient(90deg, #a06000 0%, #ff9900 100%);

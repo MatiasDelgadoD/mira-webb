@@ -40,9 +40,16 @@
   text-decoration: none;
 }
 
-.item[aria-disabled='true'] {
-  opacity: 0.55;
-  pointer-events: none;
+.reset {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .itemTitle {

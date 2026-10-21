@@ -1,0 +1,49 @@
+.otp {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  cursor: text;
+}
+
+.hidden {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  border: none;
+  caret-color: transparent;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 60px;
+  border-radius: var(--radius);
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.dark {
+  border: 1px solid var(--color-border);
+  background: var(--color-black);
+}
+
+.dark.active {
+  border-color: transparent;
+  background:
+    linear-gradient(var(--color-black), var(--color-black)) padding-box,
+    var(--gradient-cta) border-box;
+}
+
+/* Las cajas de la página del proveedor, sobre blanco. */
+.brand {
+  border: 1px solid var(--color-brand);
+  background: #ffffff;
+  color: #000000;
+}
+
+.brand.active {
+  border-width: 2px;
+}

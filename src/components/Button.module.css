@@ -8,7 +8,7 @@
   padding: 10px 16px;
   border: none;
   border-radius: var(--radius);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--color-text);
   cursor: pointer;
@@ -40,6 +40,13 @@
   border: 1px solid var(--color-border);
   background: var(--color-card);
   font-weight: 400;
+}
+
+/* El botón de las páginas del proveedor, con su azul. */
+.brand {
+  background: var(--color-brand);
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .link {

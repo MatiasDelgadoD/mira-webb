@@ -1,5 +1,18 @@
 import { createBrowserRouter } from 'react-router'
+import { Root } from './app/Root'
+import { activationRoutes } from './features/activation/routes'
 import { DevIndexPage } from './features/dev/DevIndexPage'
+import { invitationRoutes } from './features/invitation/routes'
+import { providerRoutes } from './features/provider/routes'
 
-// Cada flujo (invitation, activation, provider) suma sus rutas acá.
-export const router = createBrowserRouter([{ path: '/', element: <DevIndexPage /> }])
+export const router = createBrowserRouter([
+  {
+    element: <Root />,
+    children: [
+      { path: '/', element: <DevIndexPage /> },
+      ...invitationRoutes,
+      ...activationRoutes,
+      ...providerRoutes,
+    ],
+  },
+])

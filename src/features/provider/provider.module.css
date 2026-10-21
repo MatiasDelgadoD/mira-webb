@@ -1,0 +1,105 @@
+/* Las páginas del proveedor: blancas, con el azul de la marca. */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 26px;
+  color: #000000;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.miraLogo {
+  width: 72px;
+}
+
+.providerLogo {
+  width: 180px;
+}
+
+.title {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.validating {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2a4d;
+}
+
+.validatingText {
+  font-size: 12px;
+  color: #5a6170;
+}
+
+/* Conecta tu MIRA Watch (oscura, con los dos pasos). */
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.connectSteps {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  margin: 26px 0 0;
+  padding: 0 4px;
+  list-style: none;
+  text-align: left;
+}
+
+.connectStep {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  width: 28px;
+  height: 28px;
+  margin-top: 4px;
+  border-radius: 50%;
+  background: var(--gradient-cta);
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1408;
+}
+
+.connectBody {
+  flex: 1;
+}
+
+.connectTitle {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.connectText {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: var(--color-text-secondary);
+}
+
+.connectImage {
+  width: 112px;
+}

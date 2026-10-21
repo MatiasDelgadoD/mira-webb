@@ -1,0 +1,354 @@
+/* Las piezas comunes de la activación del reloj y del proveedor. */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 84px;
+}
+
+.title {
+  margin-top: 14px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.titleStrong {
+  composes: title;
+  font-weight: 500;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.35;
+  color: var(--color-text-secondary);
+}
+
+.small {
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.gold {
+  background: var(--gradient-cta);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.link {
+  padding: 0;
+  border: none;
+  background: var(--gradient-cta);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 15px;
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.demoNote {
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+/* Suscripción. */
+.subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 14px 6px 0;
+}
+
+.screenTitle {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.planCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 18px;
+  border-radius: var(--radius);
+  background: #1e1e1e;
+  text-align: center;
+}
+
+.planName {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.pill {
+  padding: 3px 14px;
+  border-radius: 8px;
+  background: var(--color-success);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.period {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.section::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--gradient-cta);
+}
+
+.sectionLabel {
+  composes: gold;
+}
+
+.methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-black);
+  font-size: 10px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.methodActive {
+  border-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Encender el reloj. */
+.watchSide {
+  width: 182px;
+}
+
+.holdPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.stepList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 22px 0 0;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: #111111;
+  list-style: none;
+  text-align: left;
+}
+
+.stepItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.stepItem + .stepItem {
+  border-top: 1px solid var(--color-border);
+}
+
+.stepNumber {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--color-text-secondary);
+  border-radius: 50%;
+  font-size: 13px;
+}
+
+.stepNumberActive {
+  border-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.stepText {
+  flex: 1;
+}
+
+/* Escanear el QR. */
+.scanner {
+  position: relative;
+  width: 168px;
+  height: 148px;
+  margin-top: 22px;
+  background: #0b0b0b;
+}
+
+.corner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: var(--color-primary);
+  border-style: solid;
+}
+
+.cornerTl {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+}
+
+.cornerTr {
+  top: 0;
+  right: 0;
+  border-width: 2px 2px 0 0;
+}
+
+.cornerBl {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 2px 2px;
+}
+
+.cornerBr {
+  right: 0;
+  bottom: 0;
+  border-width: 0 2px 2px 0;
+}
+
+.scanLine {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background: var(--gradient-cta);
+  box-shadow: 0 0 10px rgba(255, 153, 0, 0.7);
+  animation: barrido 2.2s ease-in-out infinite alternate;
+}
+
+@keyframes barrido {
+  from {
+    top: 12%;
+  }
+  to {
+    top: 88%;
+  }
+}
+
+.box {
+  width: 250px;
+  margin-top: 18px;
+}
+
+/* La cámara de la lectura del QR. */
+.camera {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin-top: 26px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #1b1b1b;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cameraHint {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+/* El PIN del reloj. */
+.watchCode {
+  width: 170px;
+  margin-top: 10px;
+}
+
+.codeTitle {
+  margin-top: 16px;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.otpWrap {
+  margin-top: 22px;
+}
+
+.question {
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+/* La vuelta a la app. */
+.doneIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin-top: 40px;
+  border: 2px solid var(--color-success);
+  border-radius: 50%;
+  box-shadow: 0 0 24px rgba(76, 175, 130, 0.45);
+  color: var(--color-success);
+}

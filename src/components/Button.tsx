@@ -1,10 +1,13 @@
 import type { ButtonHTMLAttributes, ReactNode } from 'react'
 import styles from './Button.module.css'
 
-type ButtonVariant = 'gradient' | 'outlined' | 'dark' | 'link'
+type ButtonVariant = 'gradient' | 'outlined' | 'dark' | 'brand' | 'link'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  /** gradient: CTA dorado; outlined: borde dorado; dark: gris oscuro; link: texto. */
+  /**
+   * gradient: CTA dorado; outlined: borde dorado; dark: gris oscuro; brand:
+   * el azul del proveedor; link: texto.
+   */
   variant?: ButtonVariant
   /** Ícono a la derecha del texto (la flecha de "Continuar"). */
   trailing?: ReactNode

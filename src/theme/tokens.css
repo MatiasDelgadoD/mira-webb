@@ -1,0 +1,61 @@
+/*
+ * Tokens del tema de la app (mira-app: lib/core/constants/app_colors.dart y
+ * app_dimens.dart). Si cambian allá, se cambian acá.
+ */
+:root {
+  /* Colores */
+  --color-black: #000000;
+  --color-bg: #0d0d0d;
+  --color-primary: #e0a040;
+  --color-text: #f5f5f0;
+  --color-text-secondary: #888880;
+  --color-label: #878780;
+  --color-hint: #666660;
+  --color-border: #2a2a2a;
+  --color-card: #161616;
+  --color-card-alt: #151515;
+  --color-success: #4caf82;
+  --color-danger: #e05252;
+
+  /* Todo lo dorado va con este degradado, nunca plano. */
+  --gradient-cta: linear-gradient(90deg, #a06000 0%, #ff9900 100%);
+
+  /*
+   * Fondos con brillo ámbar (background_light.dart y background_screen.dart):
+   * un radial centrado arriba y un fundido a negro hacia el pie.
+   */
+  --bg-light:
+    linear-gradient(180deg, transparent 45%, rgba(0, 0, 0, 0.8) 80%),
+    radial-gradient(
+      circle calc(min(100vw, 430px) * 1.05) at 50% 30%,
+      #3b2008 0%,
+      #1c0e03 28%,
+      #090400 55%,
+      #000000 100%
+    );
+  --bg-glow:
+    linear-gradient(180deg, transparent 45%, #000000 72%),
+    radial-gradient(
+      circle calc(min(100vw, 430px) * 1.05) at 50% 28%,
+      #7a4a0a 0%,
+      #3d2200 28%,
+      #0d0800 58%,
+      #000000 100%
+    );
+
+  /* Medidas */
+  --radius: 10px;
+  --radius-otp: 12px;
+  --radius-sheet: 20px;
+  --height-cta: 44px;
+  --height-field: 50px;
+  --pad-text: 20px;
+  --pad-field: 15px;
+  --pad-cta: 28px;
+  --max-width: 430px;
+
+  /* SF Pro sólo existe en Apple; en el resto, Inter. */
+  --font:
+    -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter Variable', Inter,
+    'Segoe UI', Roboto, sans-serif;
+}

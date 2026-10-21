@@ -1,0 +1,37 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+}
+
+.light {
+  background: var(--bg-light);
+}
+
+.glow {
+  background: var(--bg-glow);
+}
+
+.plain {
+  background: var(--color-black);
+}
+
+.white {
+  background: #ffffff;
+  color: #000000;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 var(--pad-field);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px var(--pad-cta) 24px;
+}

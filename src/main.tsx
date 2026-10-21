@@ -1,0 +1,13 @@
+import '@fontsource-variable/inter'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { RouterProvider } from 'react-router'
+import { router } from './router'
+import './theme/tokens.css'
+import './theme/global.css'
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>,
+)
